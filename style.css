@@ -1,0 +1,186 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: #f4f3f1;
+    color: #6b6b6b;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+nav h1 {
+    font-size: 4em;
+    color: #6b6b6b;
+    width: 80px;
+    margin-left: 3%;
+}
+nav h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1em;
+    white-space: nowrap;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+textarea {
+    margin: 1%;
+    width: 300px;
+    height: 150px;
+    resize: none;
+    border: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+textarea:focus {
+    background-color: lightblue;
+}
+
+.about-me {
+    text-align: center;
+    width: 100%;
+}
+
+.about-me h1 {
+    margin: 8% 0% 3% 0%;
+}
+
+.about-me .text {
+    margin: auto;
+    width: 50%;
+    overflow-wrap: break-word;
+    hyphens: manual;
+    white-space: pre-wrap;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form input{
+    margin: 10px;
+    width: 300px;
+    border: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-form input:focus {
+    background-color: lightblue;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    margin: 0%;
+}
+  
+.hover-underline-animation:hover {
+    cursor: pointer;
+}
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #6b6b6b;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+.main-page-mobile {
+    text-align: center;
+}
+
+.main-page-mobile img {
+    width: 0%;
+    height: 0%;
+}
+
+.main-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-page img {
+    margin-top: 4%;
+    width: 25%;
+    height: 70%;
+}
+.main-page h1 {
+    font-size: 4em;
+    margin: 0% 30%;
+    color: black;
+    white-space: nowrap;
+}
+
+.main-page h2 {
+    margin:0% 40%;
+    white-space: nowrap;
+    color: black;
+}
+
+.projects-container {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+}
+
+.projects-container .projects {
+    width: 35%;
+    height: 30%;
+    margin: 2%;
+    position: relative;
+}
+
+.projects-container .projects img {
+    width: 100%;
+    height: 70%;
+    filter: brightness(70%);
+    transition: all 0.5s ease-in-out;
+}
+
+.projects-container .projects img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.projects-container .projects h3 {
+    position: absolute;
+    left: 16px;
+    bottom: 8px;
+    background-color: transparent;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+#about-me {
+    white-space: nowrap;
+}
+
+#contact {
+    margin-right: 20%;
+}
